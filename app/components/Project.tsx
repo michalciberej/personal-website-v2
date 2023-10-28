@@ -32,6 +32,7 @@ const Project: React.FC<ProjectProps> = ({
               alt={alt}
               width={960}
               height={870}
+              priority
               className='
               brightness-75
               w-full
@@ -167,6 +168,7 @@ const Project: React.FC<ProjectProps> = ({
               alt={alt}
               width={960}
               height={870}
+              priority
               className='
               brightness-75
               w-full
