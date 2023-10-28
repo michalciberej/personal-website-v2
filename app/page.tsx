@@ -64,22 +64,11 @@ const Home = () => {
           y: isDesktop ? '5%' : '5%',
         });
       });
-      // WEBSITE SHRINK
-      gsap.set('#contact', { opacity: 0 });
-      gsap.to('#contact', {
-        scrollTrigger: {
-          trigger: '#contact',
-          start: 'center+=200 bottom',
-          end: '+=100',
-          scrub: true,
-        },
-        opacity: 1,
-      });
 
       gsap.to('.home', {
         scrollTrigger: {
-          trigger: '#contact',
-          start: 'center+=150 bottom',
+          trigger: '#projects',
+          start: 'bottom bottom',
           end: '+=300',
           scrub: true,
         },
