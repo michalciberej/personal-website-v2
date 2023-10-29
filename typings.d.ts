@@ -31,4 +31,5 @@ export interface StyledButtonProps {
   func?: (e: any) => void;
   children: string;
   icon?: boolean;
+  disabled?: boolean;
 }

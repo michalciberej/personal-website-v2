@@ -12,9 +12,11 @@ const StyledButton: React.FC<StyledButtonProps> = ({
   children,
   border,
   icon,
+  disabled
 }) => {
   return (
     <button
+      disabled={disabled}
       type={submit ? 'submit' : 'button'}
       className={clsx(
         `group

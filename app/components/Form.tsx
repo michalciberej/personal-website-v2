@@ -17,7 +17,7 @@ const Form = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    formState: { errors, isDirty, isValid },
   } = useForm<Inputs>({ defaultValues: { name: '', email: '', message: '' } });
   const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
@@ -61,13 +61,17 @@ const Form = () => {
         focus-visible:pl-4
         hover:bg-backgroundD/10
         hover:pl-4`,
-          errors.name ? 'border-rose-400' : 'border-backgroundD',
-          isLoading && 'opacity-75 cursor-default'
+          errors.name ? 'border-rose-500' : 'border-backgroundD',
+          isLoading &&
+            'opacity-75 cursor-default hover:pl-2 hover:bg-transparent'
         )}
       />
       <input
         placeholder='Email*'
-        {...register('email', { required: true })}
+        {...register('email', {
+          required: 'Must be valid email address.',
+          pattern: /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/,
+        })}
         className={clsx(
           `
         p-2
@@ -80,7 +84,9 @@ const Form = () => {
         focus-visible:pl-4
         hover:bg-backgroundD/10
         hover:pl-4`,
-          errors.email ? 'border-rose-400' : 'border-backgroundD'
+          errors.email ? 'border-rose-500' : 'border-backgroundD',
+          isLoading &&
+            'opacity-75 cursor-default hover:pl-2 hover:bg-transparent'
         )}
       />
       <textarea
@@ -99,14 +105,17 @@ const Form = () => {
           hover:bg-backgroundD/10
           hover:pl-4
           min-h-[8rem]`,
-          errors.message ? 'border-rose-400' : 'border-backgroundD'
+          errors.message ? 'border-rose-500' : 'border-backgroundD',
+          isLoading &&
+            'opacity-75 cursor-default hover:pl-2 hover:bg-transparent'
         )}
       />
       <StyledButton
-        submit={true}
+        submit
+        disabled={!isDirty || !isValid}
         black
-        border={true}>
-        Send
+        border>
+        {isLoading ? 'Sending...' : 'Send'}
       </StyledButton>
     </form>
   );
