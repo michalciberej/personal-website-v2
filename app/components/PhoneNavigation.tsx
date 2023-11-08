@@ -39,7 +39,7 @@ const PhoneNavigation: React.FC<PhoneNavigationProps> = ({
         duration: 1,
         ease: 'power2.inOut',
       });
-      tl.from('li > a', {
+      tl.from('.menu-links > li > a', {
         translateY: '100%',
         stagger: 0.2,
       });
@@ -60,7 +60,7 @@ const PhoneNavigation: React.FC<PhoneNavigationProps> = ({
         { opacity: 0, duration: 0.8 }
       );
       menuAnimationExit.fromTo(
-        'li > a',
+        '.menu-links > li > a',
         { translateY: 0 },
         { translateY: '100%', stagger: 0.2 },
         '<'

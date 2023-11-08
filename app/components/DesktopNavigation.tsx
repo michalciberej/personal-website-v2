@@ -5,9 +5,11 @@ const DesktopNavigation = () => {
   const currentSection = useCurrentSection();
 
   return (
-    <nav>
+    <nav className='hidden lg:block'>
       <ul
         className='
+        navbar-element
+        opacity-0
         fixed
         top-0
         right-0
