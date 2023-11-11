@@ -18,7 +18,7 @@ const NavLinkButton: React.FC<NavLinkButtonProps> = ({
 }) => {
   const handleScrollTo = (e: any, target: string) => {
     e.preventDefault();
-    document.querySelector(target)?.scrollTo({ behavior: 'smooth' });
+    document.querySelector(target)?.scrollIntoView({ behavior: 'smooth' });
   };
   return (
     <a
