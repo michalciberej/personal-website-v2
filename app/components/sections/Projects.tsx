@@ -10,7 +10,7 @@ const projects = [
     description:
       'To-do List app where all data is stored in database. Users can authenticate with credentials or with Github or Google account. Users can also create, update and delete tasks and lists, set theme or update account settings. ',
     techs:
-      'Next.js, Typescript, Tailwindcss MongoDB, Prisma, Next-Auth.js and more',
+      'Next.js, Typescript, Tailwindcss, MongoDB, Prisma, Next-Auth.js and more',
     left: true,
     links: [
       {
