@@ -20,7 +20,7 @@ const AboutMe = () => {
             </p>
             <p className='text-lg max-w-prose text-textD/80 tracking-wide'>
               I am currently focusing to improve my skills with
-              <span className='text-primary/50'> NextJS</span>,
+              <span className='text-primary/50'> Next.js</span>,
               <span className='text-primary/50'> Typescript</span>, animation
               libraries like <span className='text-primary/50'> GSAP</span> or
               <span className='text-primary/50'> Framer Motion</span> and more
