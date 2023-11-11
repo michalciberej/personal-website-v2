@@ -66,22 +66,14 @@ const Project: React.FC<ProjectProps> = ({
             <h3 className='text-2xl text-text ml-4 bg-primary -mb-2 relative z-50 max-w-fit px-4 py-1'>
               {header}
             </h3>
-            <div className='bg-textD p-6 shadow-xl flex break-words space-x-4'>
-              <div className='flex flex-col items-center justify-between text-2xl italic '>
-                {techs.map((Tech, index) => (
-                  <Tech key={index} />
-                ))}
-              </div>
+            <div className='bg-textD p-6 shadow-xl flex space-x-4'>
               <div className='flex flex-col space-y-4'>
-                <div className='space-y-2 leading-tight'>
-                  {description.map((el, index) => (
-                    <p
-                      key={index}
-                      className='md:text-lg lg:text-xl text-text/90'>
-                      {el}
-                    </p>
-                  ))}
-                </div>
+                <p className='md:text-md lg:text-lg text-text/90 border-b pb-3'>
+                  {description}
+                </p>
+                <p className='text-text/90 space-y-2'>
+                  Built with <span>{techs}</span>
+                </p>
                 <div className='flex space-x-4 justify-end bg-textD'>
                   {links.map((el, index) => (
                     <StyledLink
@@ -115,22 +107,19 @@ const Project: React.FC<ProjectProps> = ({
                 min-w-[350px]
                 md:max-w-sm
                 lg:max-w-md
-                xl:max-w-lg
+                xl:max-w-xl
                 z-50'>
             <h3 className='text-2xl text-text mr-4 bg-primary -mb-2 place-self-end relative z-50 max-w-fit px-4 py-1'>
               {header}
             </h3>
             <div className='bg-textD p-6 shadow-xl flex break-words space-x-4'>
               <div className='flex flex-col space-y-4'>
-                <div className='space-y-1'>
-                  {description.map((el, index) => (
-                    <p
-                      key={index}
-                      className='md:text-lg lg:text-xl text-text/90'>
-                      {el}
-                    </p>
-                  ))}
-                </div>
+                <p className='md:text-md lg:text-lg text-text/90 border-b pb-3'>
+                  {description}
+                </p>
+                <p className='text-text/90 space-y-2 py-2'>
+                  Built with <span>{techs}</span>
+                </p>
                 <div className='flex space-x-4 justify-start bg-textD'>
                   {links.map((el, index) => (
                     <StyledLink
@@ -145,11 +134,6 @@ const Project: React.FC<ProjectProps> = ({
                     </StyledLink>
                   ))}
                 </div>
-              </div>
-              <div className='flex flex-col items-center justify-between text-2xl italic '>
-                {techs.map((Tech, index) => (
-                  <Tech key={index} />
-                ))}
               </div>
             </div>
           </div>
