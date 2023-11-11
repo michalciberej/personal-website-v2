@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import { AiFillGithub, AiOutlineTwitter, AiFillLinkedin } from 'react-icons/ai';
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 
 const links = [
   {
@@ -12,11 +12,6 @@ const links = [
     label: 'Link to my Linkedin account',
     icon: AiFillLinkedin,
   },
-  {
-    link: 'https://www.twitter.com/michalciberej',
-    label: 'Link to my Twitter account',
-    icon: AiOutlineTwitter,
-  },
 ];
 
 const Socials = ({ column, black }: { column?: boolean; black?: boolean }) => {
@@ -25,7 +20,7 @@ const Socials = ({ column, black }: { column?: boolean; black?: boolean }) => {
       className={clsx(
         'flex',
         black ? 'text-text' : 'text-textD',
-        column ? 'flex-col space-y-4' : 'flex-row space-x-4'
+        column ? 'flex-col space-y-5 pt-1' : 'flex-row space-x-4'
       )}>
       {links.map((link, index) => (
         <Social
