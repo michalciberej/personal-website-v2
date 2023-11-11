@@ -7,8 +7,8 @@ export interface ProjectProps {
   thumbnail: string;
   header: string;
   alt: string;
-  description: string[];
-  techs: string[];
+  description: string;
+  techs: string;
   left: boolean;
   links: Links[];
 }

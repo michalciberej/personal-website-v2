@@ -1,26 +1,36 @@
 import SectionHeading from '../SectionHeading';
 import Project from '../Project';
 import React from 'react';
-import { TbBrandFramerMotion } from 'react-icons/tb';
-import { DiSass } from 'react-icons/di';
-import {
-  SiNextdotjs,
-  SiTypescript,
-  SiTailwindcss,
-  SiAppwrite,
-} from 'react-icons/si';
 
 const projects = [
+  {
+    thumbnail: '/progenda.png',
+    header: 'Progenda',
+    alt: 'Picture of project - Progenda',
+    description:
+      'To-do List app where all data is stored in database. Users can authenticate with credentials or with Github or Google account. Users can also create, update and delete tasks and lists, set theme or update account settings. ',
+    techs:
+      'Next.js, Typescript, Tailwindcss MongoDB, Prisma, Next-Auth.js and more',
+    left: true,
+    links: [
+      {
+        title: 'GitHub',
+        link: 'https://github.com/michalciberej/progenda',
+      },
+      {
+        title: 'Live Demo',
+        link: 'https://progenda.vercel.app/',
+      },
+    ],
+  },
   {
     thumbnail: '/ecommerce-website.png',
     header: 'Ecommerce Website',
     alt: 'Picture of project - ecommerce website',
-    description: [
-      'Modern ecommerce website focused on fashion.',
-      'Products are fetched from database and stored in cache. Order data is sent to database on order completion.',
-    ],
-    techs: [SiNextdotjs, SiTypescript, SiTailwindcss, SiAppwrite],
-    left: true,
+    description:
+      'Modern ecommerce website focused on fashion. Products are fetched from database and stored in cache. Order data is sent to database on order completion.',
+    techs: 'Next.js, Typescript, Tailwindcss and Appwrite',
+    left: false,
     links: [
       {
         title: 'GitHub',
@@ -36,12 +46,10 @@ const projects = [
     thumbnail: '/custom-video-player.png',
     header: 'Custom Video Player',
     alt: 'Picture of project - custom video player',
-    description: [
-      'Custom video player with all functionalities you would expect.',
-      'Possible to upload own video to watch.',
-    ],
-    techs: [SiNextdotjs, SiTypescript, SiTailwindcss],
-    left: false,
+    description:
+      'Custom video player with all functionalities you would expect. Possible to upload own video to watch.',
+    techs: 'Next.js, Typescript and Tailwindcss',
+    left: true,
     links: [
       {
         title: 'GitHub',
@@ -50,27 +58,6 @@ const projects = [
       {
         title: 'Live Demo',
         link: 'https://custom-video-player-weld.vercel.app/',
-      },
-    ],
-  },
-  {
-    thumbnail: '/parallax-gallery.png',
-    header: 'Parallax Gallery',
-    alt: 'Picture of project - parallax gallery',
-    description: [
-      'Small project to get better understanding of parallax.',
-      'Used Lenis smooth scroll package to achieve smooth animation.',
-    ],
-    techs: [SiNextdotjs, SiTypescript, DiSass, TbBrandFramerMotion],
-    left: true,
-    links: [
-      {
-        title: 'GitHub',
-        link: 'https://github.com/michalciberej/nextjs-parallax-gallery',
-      },
-      {
-        title: 'Live Demo',
-        link: 'https://nextjs-parallax-gallery.vercel.app/',
       },
     ],
   },
