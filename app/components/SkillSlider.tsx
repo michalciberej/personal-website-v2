@@ -21,11 +21,11 @@ const skills = [
     icon: BiLogoReact,
   },
   {
-    title: 'NextJS',
+    title: 'Next.js',
     icon: SiNextdotjs,
   },
   {
-    title: 'TailwindCSS',
+    title: 'Tailwindcss',
     icon: SiTailwindcss,
   },
   {
@@ -37,11 +37,11 @@ const skills = [
     icon: BiLogoMongodb,
   },
   {
-    title: 'JavaScript',
+    title: 'Javascript',
     icon: BiLogoJavascript,
   },
   {
-    title: 'TypeScript',
+    title: 'Typescript',
     icon: BiLogoTypescript,
   },
   {
