@@ -10,21 +10,25 @@ const AboutMe = () => {
         <div className='mb-20 md:px-10 flex flex-col md:flex-row w-full justify-between items-end gap-8'>
           <div className='space-y-8 flex flex-col'>
             <h3 className='text-2xl'>
-              Hello there, I am Michal and I am self-thought web deveveloper.
+              Hi there, I&#39;m Michal, a self-taught web developer.
             </h3>
             <p className='text-lg max-w-prose text-textD/80 tracking-wide'>
-              In 2022 decided to start online business. I needed a website to
-              sell my products. After I created many websites with platforms
-              like WordPress I decided to learn how to code. So I can create
-              websites or applications from the ground up.
+              In 2022, I decided to kickstart my online business and needed a
+              website to showcase and sell my products. Although I initially
+              created websites using platforms like WordPress, I soon realized
+              the importance of coding. This led me to embark on a journey to
+              learn how to build websites and applications from scratch.
             </p>
             <p className='text-lg max-w-prose text-textD/80 tracking-wide'>
-              I am currently focusing to improve my skills with
+              Currently, my focus is on enhancing my skills with technologies
+              such as
               <span className='text-primary/50'> Next.js</span>,
-              <span className='text-primary/50'> Typescript</span>, animation
-              libraries like <span className='text-primary/50'> GSAP</span> or
-              <span className='text-primary/50'> Framer Motion</span> and more
-              backend related topics like databases or authentication.
+              <span className='text-primary/50'> Typescript</span>, and
+              incorporating animation libraries like
+              <span className='text-primary/50'> GSAP</span> or
+              <span className='text-primary/50'> Framer Motion</span>.
+              Additionally, I&#39;m delving into backend topics like databases
+              and authentication to round out my skill set.
             </p>
           </div>
           <Socials />
