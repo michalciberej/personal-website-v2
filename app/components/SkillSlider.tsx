@@ -8,12 +8,14 @@ import {
   BiLogoGit,
   BiLogoNodejs,
 } from 'react-icons/bi';
+import { DiSqllite } from 'react-icons/di';
 import { SiNextdotjs, SiTailwindcss } from 'react-icons/si';
-import { FaSass } from 'react-icons/fa';
+import { FaSass, FaPython } from 'react-icons/fa';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 import { useCallback } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
+import { IconType } from 'react-icons';
 
 const skills = [
   {
@@ -25,7 +27,7 @@ const skills = [
     icon: SiNextdotjs,
   },
   {
-    title: 'Tailwindcss',
+    title: 'TailwindCSS',
     icon: SiTailwindcss,
   },
   {
@@ -37,11 +39,11 @@ const skills = [
     icon: BiLogoMongodb,
   },
   {
-    title: 'Javascript',
+    title: 'JavaScript',
     icon: BiLogoJavascript,
   },
   {
-    title: 'Typescript',
+    title: 'TypeScript',
     icon: BiLogoTypescript,
   },
   {
@@ -51,6 +53,14 @@ const skills = [
   {
     title: 'NodeJS',
     icon: BiLogoNodejs,
+  },
+  {
+    title: 'Python',
+    icon: FaPython,
+  },
+  {
+    title: 'SQL',
+    icon: DiSqllite,
   },
 ];
 
@@ -108,7 +118,7 @@ const Skill = ({
   index,
 }: {
   title: string;
-  icon: string;
+  icon: IconType;
   index: number;
 }) => {
   return (
