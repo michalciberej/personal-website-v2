@@ -5,7 +5,10 @@ import gsap from 'gsap';
 
 const Cursor = () => {
   const cursorRef = useRef(null);
-  const isTouchDevice = 'ontouchstart' in window;
+  let isTouchDevice = null;
+  if (typeof window !== 'undefined') {
+    isTouchDevice = 'ontouchstart' in window;
+  }
 
   useEffect(() => {
     const cursor = cursorRef.current;
