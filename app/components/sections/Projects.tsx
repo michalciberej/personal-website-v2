@@ -10,7 +10,7 @@ const projects = [
     description:
       'To-do List app where all data is stored in database. Users can authenticate with credentials or with Github or Google account. Users can also create, update and delete tasks and lists, set theme or update account settings. ',
     techs:
-      'Next.js, Typescript, Tailwindcss, MongoDB, Prisma, Next-Auth.js and more',
+      'Next.js, Typescript, TailwindCSS, MongoDB, Prisma, Next-Auth.js and more',
     left: true,
     links: [
       {
@@ -29,7 +29,7 @@ const projects = [
     alt: 'Picture of project - ecommerce website',
     description:
       'Modern ecommerce website focused on fashion. Products are fetched from database and stored in cache. Order data is sent to database on order completion.',
-    techs: 'Next.js, Typescript, Tailwindcss and Appwrite',
+    techs: 'Next.js, Typescript, TailwindCSS and Appwrite',
     left: false,
     links: [
       {
@@ -48,7 +48,7 @@ const projects = [
     alt: 'Picture of project - custom video player',
     description:
       'Custom video player with all functionalities you would expect. Possible to upload own video to watch.',
-    techs: 'Next.js, Typescript and Tailwindcss',
+    techs: 'Next.js, Typescript and TailwindCSS',
     left: true,
     links: [
       {
