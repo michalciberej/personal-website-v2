@@ -5,7 +5,7 @@ import gsap from 'gsap';
 
 const Cursor = () => {
   const cursorRef = useRef(null);
-  let isTouchDevice = null;
+  let isTouchDevice: boolean | null = null;
   if (typeof window !== 'undefined') {
     isTouchDevice = 'ontouchstart' in window;
   }
