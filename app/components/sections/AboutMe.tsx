@@ -10,7 +10,7 @@ const AboutMe = () => {
         <div className='mb-20 md:px-10 flex flex-col md:flex-row w-full justify-between items-end gap-8'>
           <div className='space-y-8 flex flex-col'>
             <h3 className='text-2xl'>
-              Hi there, I&#39;m Michal, a self-taught web developer.
+              Hi there, I&#39;m Michal, a web developer.
             </h3>
             <p className='text-lg max-w-prose text-textD/80 tracking-wide'>
               In 2022, I decided to kickstart my online business and needed a
