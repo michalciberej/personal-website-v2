@@ -9,7 +9,7 @@ import {
   BiLogoNodejs,
 } from 'react-icons/bi';
 import { DiSqllite } from 'react-icons/di';
-import { SiNextdotjs, SiTailwindcss } from 'react-icons/si';
+import { SiExpress, SiNextdotjs, SiTailwindcss } from 'react-icons/si';
 import { FaSass, FaPython } from 'react-icons/fa';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 import { useCallback } from 'react';
@@ -47,11 +47,15 @@ const skills = [
     icon: BiLogoTypescript,
   },
   {
+    title: 'Express',
+    icon: SiExpress,
+  },
+  {
     title: 'Git',
     icon: BiLogoGit,
   },
   {
-    title: 'NodeJS',
+    title: 'Node.js',
     icon: BiLogoNodejs,
   },
   {
